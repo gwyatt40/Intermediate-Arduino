@@ -65,6 +65,6 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 We had to use the LCD Backpack again for this assignment, but with the added challenge of using a potentiometer to change to brightness of an LED and have the LCD display its value. 
 
 ### Problems
-The LCD wiring and code was pretty much the same as in the last LCD assignment. The real challenge for this project was 
+The LCD wiring and code was pretty much the same as in the last LCD assignment. The real challenge for this project was... 
 
 ## Motor Control
