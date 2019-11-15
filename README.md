@@ -70,6 +70,13 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 We had to use the LCD Backpack again for this assignment, but with the added challenge of using a potentiometer to change to brightness of an LED and have the LCD display its value. 
 
 ### Problems
-The LCD wiring and code was pretty much the same as in the last LCD assignment I . The real challenge for this project was wiring and coding for the potentiometer. 
+The LCD wiring and code was pretty much the same as in the last LCD assignment. I just had to remember to switch 0X27 with 0x3.  The real challenge for this project was wiring and coding for the potentiometer. I decided that, in order to simplify things a bit, I would wire and code for the LED and potentiometer first (using a Serial Monitor of course) and then add in the LCD later. I found a code online for the potentiometer which read the potentiometer pin in order to create a variable called readValue(). The readValue() was then used to calculate anoher variable called writeValue() which was written to the LED. I definitely wouldn't have been able to figure out how to do this on my own (calculating writeValue() involves multiplying readValue() by 255./1023.) so I'm glad I looked up a code before attempting to write one. I also googled the fritzing which was fairly simple, just basic LED wiring plus a potentiometer with legs to ground, 5V, and pin. Once I got this wor
 
 ## Motor Control
+### Description
+
+### Problems
+
+### Pictures
+
+### Lessons Learned
