@@ -11,6 +11,10 @@
 The most difficult part of this project was definitely the code- the wiring was fairly simple since it was just review from last year. In addition to using analogwrite() for the first time, I had to create 2 different variables in order to have the brightness increase and decrease. Once I added in the Serial Monitor code, I ended up having to use even more variables, making my code increasingly complicated. Most of the issues I ran into were just because I had forgotten something from last year or didn't know how to use a new function. Luckily, I found a great arduino.cc page that helped with this (linked in the photos) One unsolved problem was that my LED would blink for just a second once it reached maximum brightness, but since this did not prevent it from dimming again and did not interrupt the Serial Monitor I just left it. 
 ### Pictures 
 
+<img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="400">
+ 
+ - Photo from arduino.cc/en/tutorial/fade
+
 ### Lessons Learned
 - Look for a website before you do anything else
 - Always test your code in between changes
@@ -25,6 +29,7 @@ This was my first time ever using an LCD screen! The project was simply to wire 
 Besides having to figure out how to make a basic timer (which I did using a count function) and having to download the Liquid Crystal library and use LCD related functions for the first time (LCD.begin, etc) the code for this project wasn't to complicated. I could find info on most of the code through googling, though I was unable to find a site as comprehensive as the one for LED Fade. I also did have a bit of an issue with the Liquid Crystal library but I just had to download it and make sure it was saved in the correct place. The wiring was much, much more difficult. While the Adafruit page linked on Canvas was extremely helpful, it was still a bit confusing to connect all twelve (12!!) of the LCD pins to the correct places on the Arduino. It took several tries and lots of double-checking to make sure that everything was where it should be. 
 
 ### Pictures
+
 
 ### Lessons Learned
 - Always color code and custom cut your wires!!
@@ -65,6 +70,6 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 We had to use the LCD Backpack again for this assignment, but with the added challenge of using a potentiometer to change to brightness of an LED and have the LCD display its value. 
 
 ### Problems
-The LCD wiring and code was pretty much the same as in the last LCD assignment. The real challenge for this project was... 
+The LCD wiring and code was pretty much the same as in the last LCD assignment I . The real challenge for this project was wiring and coding for the potentiometer. 
 
 ## Motor Control
