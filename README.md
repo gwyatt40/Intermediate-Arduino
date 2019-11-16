@@ -4,7 +4,7 @@
 
 ## LED Blink Revisited
 
-### Descriotion
+### Description
   The goal of this assignment was to change the code of a simple LED blink project so that the LED would fade in and out instead of blinking. We also had to make the Serial Monitor display a wave of text was the brightness of the LED changed.
   
 ### Problems
