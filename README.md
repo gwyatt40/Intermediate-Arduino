@@ -1,5 +1,4 @@
-# Intermediate_Arduino
-
+# Intermediate Arduino
 
 
 ## LED Blink Revisited
@@ -44,6 +43,9 @@ This was the 2nd LCD assignment. It's goal was to use an LCD backpack to simplif
 The wiring for this project was (thankfully) much easier than it had been for Hello LCD. Though there were only 4 wires from the LCD to the breadboard, color codphoing them was still very helpful. As for the code, downloading the new libraries was pretty straightforward, but I did encounter an issue when using the LiquidCrystal_I2C lcd(); function. My code was giving me a repeating error and I couldn't figure out why until I realized that on the Canvas page it says to use 0x27 as the LCD address originally, but, it the case of an error, to use 0x3. Once I switched these my code worked immediately and I was able to continue the project.The rest of the new LCD setup functions worked well and I didn't encounter any other issues that couldn't be fixed by quickly checking over my code or googling.
 
 ## Pictures
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="400">
+
+
 
 ## Lessons Learned
 - If you have an error, try switching 0x27 to 0x3
@@ -55,6 +57,7 @@ The wiring for this project was (thankfully) much easier than it had been for He
 This assignment had two parts. First, we had to wire up a photointerrupter and an LED so that when something passed through the photointerrupter, the LED turned on. Next, we had to add an attachInterrupt() function to our previous basic loop() code so that the photointerrupter wouldn't miss anything that passed through it in less time than it took to run the loop.
 ### Problems
 This was a pretty tricky assignment because we had to deal with not only the photointerrupter and all the new code that went along with that, but also the attachInterrupt() function. The most difficult thing about using the photointerrupter was finding one that worked. Many photointerrupters would flash when they sensed something but would fail to actually send any input to the arduino. This made it hard to tell whether your code/wiring was incorrect or if it was just an issue with the photointerrupter. I wet through several trials of photointerrupters, even soldering one myself, before finally just using the one Justine had used before me and knew worked. For attachInterrupt() function we not only had to figure out how to add the function itself, but also had to coordinate the pins for it. The digital input pins are weird (0=pin 2, 1=pin 3, etc) and I had several problems with making sure the pin in my code corresponded with the pin I had plugged in. Towards the end of the project, my code was running correctly but my project still wasn't working, my Serial Monitor wasn't printing, and I didn't know why. It turned out that I had been using the wrong pin and I had wasted several class periods trying to figure out what was wrong when the issue was very simple.
+
 ### Pictures
 
 ### Lessons Learned
@@ -70,13 +73,28 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 We had to use the LCD Backpack again for this assignment, but with the added challenge of using a potentiometer to change to brightness of an LED and have the LCD display its value. 
 
 ### Problems
-The LCD wiring and code was pretty much the same as in the last LCD assignment. I just had to remember to switch 0X27 with 0x3.  The real challenge for this project was wiring and coding for the potentiometer. I decided that, in order to simplify things a bit, I would wire and code for the LED and potentiometer first (using a Serial Monitor of course) and then add in the LCD later. I found a code online for the potentiometer which read the potentiometer pin in order to create a variable called readValue(). The readValue() was then used to calculate anoher variable called writeValue() which was written to the LED. I definitely wouldn't have been able to figure out how to do this on my own (calculating writeValue() involves multiplying readValue() by 255./1023.) so I'm glad I looked up a code before attempting to write one. I also googled the fritzing which was fairly simple, just basic LED wiring plus a potentiometer with legs to ground, 5V, and pin. Once I got this wor
+The LCD wiring and code was pretty much the same as in the last LCD assignment. I just had to remember to switch 0X27 with 0x3.  The real challenge for this project was wiring and coding for the potentiometer. I decided that, in order to simplify things a bit, I would wire and code for the LED and potentiometer first (using a Serial Monitor of course) and then add in the LCD later. I found a code online for the potentiometer which read the potentiometer pin in order to create a variable called readValue(). The readValue() was then used to calculate anoher variable called writeValue() which was written to the LED. I definitely wouldn't have been able to figure out how to do this on my own (calculating writeValue() involves multiplying readValue() by 255./1023.) so I'm glad I looked up a code before attempting to write one. I also googled the fritzing which was fairly simple, just basic LED wiring plus a potentiometer with legs to ground, 5V, and pin. Once I got this working, adding in the LCD was fairly straightforward- I wired it up, put what the Serial Monitor was saying into lcd.print(), and added in the necessary setup/libraries. 
+
+### Pictures
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/PotentiometerPhoto.jpg" width="300" height= "400">
+
+- I didn't include the LCD in this photo since its wiring was the same as in LCD Backpack. The only new wiring was the potentiometer and LED.
+
+
+### Lessons Learned
+- If assignments are a combination of two different BLANK, its a good idea to s
+-
+-
 
 ## Motor Control
+
 ### Description
 
 ### Problems
 
 ### Pictures
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="400">
+
+- There wasn't room to include the motor in this photo, but you can see its red and blue wires. 
 
 ### Lessons Learned
