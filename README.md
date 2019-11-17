@@ -82,15 +82,17 @@ The LCD wiring and code was pretty much the same as in the last LCD assignment. 
 
 
 ### Lessons Learned
-- If assignments are a combination of two different BLANK, its a good idea to s
--
--
+- If assignments are a combination of multiple components, it's best to start with whats new
+- If you find a code online, read through all of it to make sure its exactly what you need
+
 
 ## Motor Control
 
 ### Description
+The object of this assignment was to use a potentiometer to conreol the speed of a DC motor. To do this we had to use a transistor, a diode, and a  battery pack in addition t
 
 ### Problems
+I had lots of issues with the wiring for this project, ranging from problems with the battery pack to problems with the direction of the diode. Since a battery pack was needed to power the motor (in addition to the computer powering the arduino),  I had to find a battery pack that was wired and sautered to have exactly 6V of power
 
 ### Pictures
 <img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="400">
@@ -98,3 +100,7 @@ The LCD wiring and code was pretty much the same as in the last LCD assignment. 
 - There wasn't room to include the motor in this photo, but you can see its red and blue wires. 
 
 ### Lessons Learned
+ - 
+ -
+ -
+ 
