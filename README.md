@@ -4,7 +4,7 @@
 ## LED Blink Revisited
 
 ### Description
-  The goal of this assignment was to change the code of a simple LED blink project so that the LED would fade in and out instead of blinking. We also had to make the Serial Monitor display a wave of text was the brightness of the LED changed.
+  The goal of this assignment was to change the code of a simple LED blink project so that the LED would fade in and out instead of blinking. We also had to make the Serial Monitor display a wave of text as the brightness of the LED changed.
   
 ### Problems
 The most difficult part of this project was definitely the code- the wiring was fairly simple since it was just review from last year. In addition to using analogwrite() for the first time, I had to create 2 different variables in order to have the brightness increase and decrease. Once I added in the Serial Monitor code, I ended up having to use even more variables, making my code increasingly complicated. Most of the issues I ran into were just because I had forgotten something from last year or didn't know how to use a new function. Luckily, I found a great arduino.cc page that helped with this (linked in the photos) One unsolved problem was that my LED would blink for just a second once it reached maximum brightness, but since this did not prevent it from dimming again and did not interrupt the Serial Monitor I just left it. 
