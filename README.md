@@ -13,7 +13,7 @@ The most difficult part of this project was definitely the code- the wiring was 
 
 <img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="400">
  
- - Photo from arduino.cc/en/tutorial/fade
+ - Fritzing from arduino.cc/en/tutorial/fade
 
 ### Lessons Learned
 - Look for a website before you do anything else
@@ -95,7 +95,7 @@ The LCD wiring and code was pretty much the same as in the last LCD assignment. 
 The object of this assignment was to use a potentiometer to control the speed of a DC motor. To do this we had to use several new wiring components including a transistor, a diode, and a battery pack. 
 
 ### Problems
-I had lots of issues with the wiring for this project, ranging from problems with the battery pack to problems with the direction of the diode. Since a battery pack was needed to power the motor (in addition to the computer powering the arduino), I had to find a battery pack that was wired and sautered to have exactly 6V of power. Luckily I was able to do this, but I had to test it a few times to make sure it worked and I kept forgetting what order the batteries went in to produce exactly 6V. After I got a working battery pack I had to deal with the rest of the wiring. There was a frtzing diagram on the Canvas page which was definitely helpful, but I wasn't able to figure out the finepoints of the wiring (pins etc.) from that alone. 
+I had lots of issues with the wiring for this project, ranging from problems with the battery pack to problems with the direction of the diode. Since a battery pack was needed to power the motor (in addition to the computer powering the arduino), I had to find a battery pack that was wired and sautered to have exactly 6V of power. Luckily I was able to do this, but I had to test it a few times to make sure it worked and I kept forgetting what order the batteries went in to produce exactly 6V. After I got a working battery pack I had to deal with the rest of the wiring. There was a frtzing diagram on the Canvas page which was definitely helpful, but I wasn't able to figure out the finepoints of the wiring (pins etc.) from that alone. I some googling and copied some other people's fritzing but my wiring still tuned out really wrong and I made lots of silly mistakes (my diode was facing the way, etc). Once Mr. H showed me how to fix my wiring, it turned out that my code (which was pretty simple) was ok and I got my project to work. I probably should have tried to find a really reliable fritzing diagram on Google instead of trying to piece together my wiring from random Arduino forums and what I saw of other people's projects. 
 
 ### Pictures
 <img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="400">
@@ -103,7 +103,9 @@ I had lots of issues with the wiring for this project, ranging from problems wit
 - There wasn't room to include the motor in this photo, but you can see its red and blue wires. 
 
 ### Lessons Learned
- - 
- -
- -
+ - Check you battery pack and individual batteries before doing anything else
+ - To be safe, unplug battery pack and remove all batteries before storing
+ - Always make sure that the basic layout of your wiring (what goes where) is correct (Google!) before you try to adress any other problems
+ - If your general wiring seems to be ok but your project is still not working, THEN check each individual wire and component to make sure that it  works and is in the right place/direction
+ - If at all possible, find a good fritzing diagram online to guide your wiring
  
