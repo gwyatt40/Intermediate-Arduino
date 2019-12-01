@@ -13,7 +13,7 @@ The most difficult part of this project was definitely the code- the wiring was 
 
 <img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="400">
  
- - Fritzing from arduino.cc/en/tutorial/fade
+ - Fritzing from [arduino.cc](arduino.cc/en/tutorial/fade)
 
 ### Lessons Learned
 - Look for a website before you do anything else
@@ -29,6 +29,9 @@ This was my first time ever using an LCD screen! The project was simply to wire 
 For the code, I had to figure out how to make a basic timer (which I did using a count function), download the Liquid Crystal library, and use LCD related functions for the first time (LCD.begin, etc). I could find info on most of the code through googling, though I was unable to find a site as comprehensive as the one for LED Fade. I also did have a bit of an issue with the Liquid Crystal library but I just had to download it and make sure it was saved in the correct place. The wiring was much, much more difficult. While the Adafruit page linked on Canvas was extremely helpful, it was still a bit confusing to connect all twelve (12!!) of the LCD pins to the correct places on the Arduino. It took several tries and lots of double-checking to make sure that everything was where it should be. I realized about halfway through that it would probably be a good idea to color code and customize my wires so that I could easily see where each one was connected. Even with this solution the wiring was still complicted and I was glad when we learned how to use the LCD Backpack!
 
 ### Pictures
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/hello_LCD/hello_lcd_fritzing.jpeg" width="400">
+
+- This fritzing is from [Justine's README](https://github.com/jbrown56/Intermediate-Arduino) 
 
 
 ### Lessons Learned
@@ -61,6 +64,11 @@ This assignment had two parts. First, we had to wire up a photointerrupter and a
 This was a pretty tricky assignment because we had to deal with not only the photointerrupter and all the new code that went along with that, but also the attachInterrupt() function. The most difficult thing about using the photointerrupter was finding one that worked. Many photointerrupters would flash when they sensed something but would fail to actually send any input to the arduino. This made it hard to tell whether your code/wiring was incorrect or if it was just an issue with the photointerrupter. I went through several trials of photointerrupters, even soldering one myself, before finally just using one that Justine had used before me and knew worked. For attachInterrupt() function we not only had to figure out how to add the function itself, but also had to coordinate the pins for it. The digital input pins are weird (0=pin 2, 1=pin 3, etc) and I had several problems with making sure the pin in my code corresponded with the pin I had plugged in. Towards the end of the project, my code was running correctly but my project still wasn't working, my Serial Monitor wasn't printing, and I didn't know why. It turned out that I had been using the wrong pin and I had wasted several class periods trying to figure out what was wrong when the issue was very simple.
 
 ### Pictures
+
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="400">
+
+- Again, fritzing credit to [Justine!](https://github.com/jbrown56/Intermediate-Arduino)
+
 
 ### Lessons Learned
 - FIND A WORKING PHOTOINTERRUPTER!!! (Seriously, before you do anything else) 
