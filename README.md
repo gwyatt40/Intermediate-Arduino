@@ -69,6 +69,8 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 
 - Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
 
+https://www.google.com/search?q=arduino+LCD+backpack+fritzing&rlz=1CADSMM_enUS825&tbm=isch&source=iu&ictx=1&fir=UFC0O2t8rf8j6M%253A%252CZQ2zcbewxSql5M%252C_&vet=1&usg=AI4_-kT2QaTQP7rhwYf3eq9iRC86u-veQA&sa=X&ved=2ahUKEwib6aO4wJXmAhXhUN8KHSVEClEQ9QEwBXoECAoQBg&safe=active&ssui=on#imgrc=UFC0O2t8rf8j6M:
+
 
 ### Lessons Learned
 - FIND A WORKING PHOTOINTERRUPTER!!! (Seriously, before you do anything else) 
