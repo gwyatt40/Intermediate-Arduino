@@ -65,9 +65,9 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 
 ### Pictures
 
-<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="400">
+<img src = "https://fritzing.org/projects/arduino-i2c-lcd-display" width="400">
 
-- Again, fritzing credit to [Justine!](https://github.com/jbrown56/Intermediate-Arduino)
+- Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
 
 
 ### Lessons Learned
