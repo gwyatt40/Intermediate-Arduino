@@ -29,10 +29,10 @@ This was my first time ever using an LCD screen! The project was simply to wire 
 For the code, I had to figure out how to make a basic timer (which I did using a count function), download the Liquid Crystal library, and use LCD related functions for the first time (LCD.begin, etc). I could find info on most of the code through googling, though I was unable to find a site as comprehensive as the one for LED Fade. I also did have a bit of an issue with the Liquid Crystal library but I just had to download it and make sure it was saved in the correct place. The wiring was much, much more difficult. While the Adafruit page linked on Canvas was extremely helpful, it was still a bit confusing to connect all twelve (12!!) of the LCD pins to the correct places on the Arduino. It took several tries and lots of double-checking to make sure that everything was where it should be. I realized about halfway through that it would probably be a good idea to color code and customize my wires so that I could easily see where each one was connected. Even with this solution the wiring was still complicted and I was glad when we learned how to use the LCD Backpack!
 
 ### Pictures
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="400">
+
 <img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/hello_LCD/hello_lcd_fritzing.jpeg" width="400">
-
-- This fritzing is from [Justine's README](https://github.com/jbrown56/Intermediate-Arduino) 
-
+- Fritzing from [Justine's README](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
 ### Lessons Learned
 - Always color code and custom cut your wires!!
@@ -48,7 +48,10 @@ This was the 2nd LCD assignment. It's goal was to use an LCD backpack to simplif
 The wiring for this project was (thankfully) much easier than it had been for Hello LCD. Though there were only 4 wires from the LCD to the breadboard, color coding them was still very helpful. As for the code, downloading the new libraries was pretty straightforward, but I did encounter an issue when using the LiquidCrystal_I2C lcd(); function. My code was giving me a repeating error and I couldn't figure out why until I realized that on the Canvas page it says to use 0x27 as the LCD address originally, but, it the case of an error, to use 0x3. Once I switched these my code worked immediately and I was able to continue the project. The rest of the new LCD setup functions worked well and I didn't encounter any other issues that couldn't be fixed by quickly checking over my code or googling.
 
 ## Pictures
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="400">
+
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="400">
+
+- Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
 
 
 
@@ -65,12 +68,9 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 
 ### Pictures
 
-<img src = "https://fritzing.org/projects/arduino-i2c-lcd-display" width="400">
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="400">
 
-- Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
-
-https://www.google.com/search?q=arduino+LCD+backpack+fritzing&rlz=1CADSMM_enUS825&tbm=isch&source=iu&ictx=1&fir=UFC0O2t8rf8j6M%253A%252CZQ2zcbewxSql5M%252C_&vet=1&usg=AI4_-kT2QaTQP7rhwYf3eq9iRC86u-veQA&sa=X&ved=2ahUKEwib6aO4wJXmAhXhUN8KHSVEClEQ9QEwBXoECAoQBg&safe=active&ssui=on#imgrc=UFC0O2t8rf8j6M:
-
+- Again, fritzing credit to [Justine!](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
 ### Lessons Learned
 - FIND A WORKING PHOTOINTERRUPTER!!! (Seriously, before you do anything else) 
