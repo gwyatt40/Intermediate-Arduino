@@ -32,6 +32,7 @@ For the code, I had to figure out how to make a basic timer (which I did using a
 <img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="400">
 
 <img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/hello_LCD/hello_lcd_fritzing.jpeg" width="400">
+
 - Fritzing from [Justine's README](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
 ### Lessons Learned
