@@ -2,7 +2,6 @@
 
 
 ## LED Blink Revisited
-
 ### Description
   The goal of this assignment was to change the code of a simple LED blink project so that the LED would fade in and out instead of blinking. We also had to make the Serial Monitor display a wave of text as the brightness of the LED changed.
   
@@ -11,7 +10,7 @@ The most difficult part of this project was definitely the code- the wiring was 
 
 ### Pictures 
 
-<img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="400">
+<img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="300">
  
  - Fritzing from [arduino.cc](arduino.cc/en/tutorial/fade)
 
@@ -29,9 +28,10 @@ This was my first time ever using an LCD screen! The project was simply to wire 
 For the code, I had to figure out how to make a basic timer (which I did using a count function), download the Liquid Crystal library, and use LCD related functions for the first time (LCD.begin, etc). I could find info on most of the code through googling, though I was unable to find a site as comprehensive as the one for LED Fade. I also did have a bit of an issue with the Liquid Crystal library but I just had to download it and make sure it was saved in the correct place. The wiring was much, much more difficult. While the Adafruit page linked on Canvas was extremely helpful, it was still a bit confusing to connect all twelve (12!!) of the LCD pins to the correct places on the Arduino. It took several tries and lots of double-checking to make sure that everything was where it should be. I realized about halfway through that it would probably be a good idea to color code and customize my wires so that I could easily see where each one was connected. Even with this solution the wiring was still complicted and I was glad when we learned how to use the LCD Backpack!
 
 ### Pictures
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="400">
 
-<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/hello_LCD/hello_lcd_fritzing.jpeg" width="400">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="300">
+
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/hello_LCD/hello_lcd_fritzing.jpeg" width="300">
 
 - Fritzing from [Justine's README](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
@@ -50,7 +50,7 @@ The wiring for this project was (thankfully) much easier than it had been for He
 
 ## Pictures
 
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="400">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="300">
 
 - Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
 
@@ -69,7 +69,7 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 
 ### Pictures
 
-<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="400">
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="300">
 
 - Again, fritzing credit to [Justine!](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
@@ -109,7 +109,7 @@ The object of this assignment was to use a potentiometer to control the speed of
 I had lots of issues with the wiring for this project, ranging from problems with the battery pack to problems with the direction of the diode. Since a battery pack was needed to power the motor (in addition to the computer powering the arduino), I had to find a battery pack that was wired and sautered to have exactly 6V of power. Luckily I was able to do this, but I had to test it a few times to make sure it worked and I kept forgetting what order the batteries went in to produce exactly 6V. After I got a working battery pack I had to deal with the rest of the wiring. There was a frtzing diagram on the Canvas page which was definitely helpful, but I wasn't able to figure out the finepoints of the wiring (pins etc.) from that alone. I some googling and copied some other people's fritzing but my wiring still tuned out really wrong and I made lots of silly mistakes (my diode was facing the way, etc). Once Mr. H showed me how to fix my wiring, it turned out that my code (which was pretty simple) was ok and I got my project to work. I probably should have tried to find a really reliable fritzing diagram on Google instead of trying to piece together my wiring from random Arduino forums and what I saw of other people's projects. 
 
 ### Pictures
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="400">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="300">
 
 - There wasn't room to include the motor in this photo, but you can see its red and blue wires. 
 
