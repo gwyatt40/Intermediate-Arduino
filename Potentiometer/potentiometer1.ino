@@ -1,30 +1,30 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h> 
-LiquidCrystal_I2C lcd(0x3f,16,2);
+LiquidCrystal_I2C lcd(0x3f,16,2); //Basic LCD setup and libraries etc
 
-int potPin= A0;  //Declare potPin to be analog pin A0
-int LEDPin= 9;  // Declare LEDPin to be arduino pin 9
-int readValue;  // Use this variable to read Potentiometer
-int writeValue; // Use this variable for writing to LED
+int potPin= A0;  //Sets potentiometer to analog pin A0
+int LEDPin= 9;  // Sets LED to normal arduino pin 9
+int readValue;  // Variable read from potentiometer
+int writeValue; // Variable written to LED
  
 void setup() {
-  pinMode(potPin, INPUT);  //set potPin to be an input
-  pinMode(LEDPin, OUTPUT); //set LEDPin to be an OUTPUT
-  Serial.begin(9600);      // turn on Serial Port
+  pinMode(potPin, INPUT);  //Potentiometer pin is INPUT
+  pinMode(LEDPin, OUTPUT); //LED pin is output
+  Serial.begin(9600);      
   lcd.begin(16, 2);
-  lcd.print("You are writing a value of");
+  lcd.print("You are writing a value of"); //LCD is constantly displaying this
   lcd.init();
   lcd.backlight();
 }
  
 void loop() {
   
- readValue = analogRead(potPin);  //Read the voltage on the Potentiometer
- writeValue = (255./1023.) * readValue; //Calculate Write Value for LED
- analogWrite(LEDPin, writeValue);      //Write to the LED
- Serial.print("You are writing a value of ");  //for debugging print your values
- Serial.println(writeValue);
+ readValue = analogRead(potPin);  //readValue derived from reading the potentiometer value
+ writeValue = (255./1023.) * readValue; //Formula for calculating LED write value
+ analogWrite(LEDPin, writeValue);      //LED set to writeValue
+ Serial.print("You are writing a value of ");  
+ Serial.println(writeValue); //Serial print for debugging purposes
  lcd.setCursor(0, 1);
- lcd.print(writeValue);
+ lcd.print(writeValue); //LCD prints same thing as Serial Monitor
  
 }
