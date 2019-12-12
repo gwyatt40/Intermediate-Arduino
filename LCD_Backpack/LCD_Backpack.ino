@@ -1,3 +1,8 @@
+// LCD Backpack Code
+// Georgia Wyatt
+/* Uses an LCD (with backpack) to print HELLO WORLD! and count the number of times a button has been pressed*/ 
+
+
 #include <Wire.h>
 #include <LCD.h> 
 #include <LiquidCrystal_I2C.h> //2 new libraries for LCD backpack + different liquid crystal (12c)
