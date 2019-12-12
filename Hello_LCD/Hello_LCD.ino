@@ -1,3 +1,9 @@
+//Hello LCD Code
+// Georgia Wyatt
+/* This code uses an LCD (without a backpack) to print HELLO WORLD! and a timer counting the seconds since the program began*/
+
+
+
 #include <LiquidCrystal.h> //Library necessary to read LCD code!!!
 
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12); //LCD pins setup 
