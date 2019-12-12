@@ -1,4 +1,6 @@
-
+//LED Fade Code
+//Georgia Wyatt
+/* Uses an analogWrite function with variables brightness and fadeAmount to increase and decrease an LED's brightness over time*/
 
 int led = 11; //LED pin
 int brightness = 0; //sets original brightness
