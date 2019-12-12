@@ -1,3 +1,8 @@
+// Potentiometer Code
+// Georgia Wyatt
+/* Uses a potentiometer to adjust the brightness of an LED and write the value on an LCD*/
+
+
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h> 
 LiquidCrystal_I2C lcd(0x3f,16,2); //Basic LCD setup and libraries etc
