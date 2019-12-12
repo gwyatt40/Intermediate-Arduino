@@ -1,4 +1,6 @@
-
+// Potentiometer Code 1 (Loop)
+// Georgia Wyatt
+/* Uses a basic loop to read a photointerrupter which, when activated, causes an LED to turn on*/
 int photoPin = 2;
 int ledPin = 8;
 int photoState = 0; //Sets photoState variable 
