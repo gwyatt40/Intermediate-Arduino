@@ -1,3 +1,6 @@
+// Photointerrupter Code 2 (attachInterrupt)
+// Georgia Wyatt
+/* Uses attachInterrupt to minimize mistakes when using photointerrupter activation to turn on/off an LED*/
 
 int photoPin = 2;
 int ledPin = 8;
