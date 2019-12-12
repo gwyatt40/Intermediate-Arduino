@@ -1,3 +1,9 @@
+// Motor Control Code
+// Georgia Wyatt
+/* Uses a potentiometer to control the speed of a 6V motor*/
+
+
+
 int potPin = 2;
 int motorPin = 9;
 int valPot = 0; //Initial potentiometer value is 0
