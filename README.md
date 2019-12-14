@@ -55,7 +55,7 @@ For the code, I had to figure out how to make a basic timer (which I did using l
 This was the 2nd LCD assignment. It's goal was to use an LCD backpack to simplify the wiring for an LCD to Arduino setup.
 
 ### Code
-[LCD Backpack Code] (https://github.com/gwyatt40/Intermediate-Arduino/tree/master/LCD_Backpack)
+[LCD Backpack Code](https://github.com/gwyatt40/Intermediate-Arduino/tree/master/LCD_Backpack)
 
 
 ## Problems
@@ -79,9 +79,9 @@ The wiring for this project was (thankfully) much easier than it had been for He
 This assignment had two parts. First, we had to wire up a photointerrupter and an LED so that when something passed through the photointerrupter, the LED turned on. Next, we had to add an attachInterrupt() function to our previous basic loop code so that the photointerrupter wouldn't miss anything that passed through it in less time than it took to run the loop.
 
 ### Code
-[Photointerrupter Loop Code] (https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Photointerrupter_LED_1/PhotointerrupterLED_1.ino)
+[Photointerrupter Loop Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Photointerrupter_LED_1/PhotointerrupterLED_1.ino)
 
-[Photointerrupter Attach Interrupt Code] (https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Photointerrupter_LED_2/PhotointerrupterLED_2.ino)
+[Photointerrupter Attach Interrupt Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Photointerrupter_LED_2/PhotointerrupterLED_2.ino)
 
 
 ### Problems
@@ -106,7 +106,7 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 We had to use the LCD Backpack again for this assignment, but with a new goal of using a potentiometer to change the brightness of an LED and having the LCD screen display its value. 
 
 ### Code
-[Potentiometer Code] (https://github.com/gwyatt40/Intermediate-Arduino/tree/master/Potentiometer)
+[Potentiometer Code](https://github.com/gwyatt40/Intermediate-Arduino/tree/master/Potentiometer)
 
 
 ### Problems
