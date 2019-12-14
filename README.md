@@ -29,7 +29,7 @@ This was my first time ever using an LCD screen! The project was simply to wire 
 
 
 ### Code
-[LED Fade Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/LED_Blink_Revisited/LED%20Blink.ino)
+[Hello LCD Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Hello_LCD/Hello_LCD.ino)
 
 ### Problems
 For the code, I had to figure out how to make a basic timer (which I did using lcd.print(millis() /1000)) download the Liquid Crystal library, and use LCD related functions for the first time (LCD.begin, etc). I could find info on most of the code through googling, though I was unable to find a site as comprehensive as the one for LED Fade. I also did have a bit of an issue with the Liquid Crystal library but I just had to download it and make sure it was saved in the correct folder. The wiring was much, much more complicated. While the Adafruit page linked on Canvas was extremely helpful, it was still a bit confusing to connect all twelve (12!!) of the LCD pins to the correct places on the Arduino. It took several tries and lots of double-checking to make sure that everything was where it should be. I realized about halfway through that it would probably be a good idea to color code and cut my wires so that I could easily see where each one was connected. Even with this solution the wiring was still complicated and I was glad when we learned how to use the LCD Backpack!
@@ -55,7 +55,7 @@ For the code, I had to figure out how to make a basic timer (which I did using l
 This was the 2nd LCD assignment. It's goal was to use an LCD backpack to simplify the wiring for an LCD to Arduino setup.
 
 ### Code
-[LED Fade Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/LED_Blink_Revisited/LED%20Blink.ino)
+[LCD Backpack Code] (https://github.com/gwyatt40/Intermediate-Arduino/tree/master/LCD_Backpack)
 
 
 ## Problems
@@ -77,6 +77,13 @@ The wiring for this project was (thankfully) much easier than it had been for He
 ## Photointerrupters
 ### Description
 This assignment had two parts. First, we had to wire up a photointerrupter and an LED so that when something passed through the photointerrupter, the LED turned on. Next, we had to add an attachInterrupt() function to our previous basic loop code so that the photointerrupter wouldn't miss anything that passed through it in less time than it took to run the loop.
+
+### Code
+[Photointerrupter Loop Code] (https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Photointerrupter_LED_1/PhotointerrupterLED_1.ino)
+
+[Photointerrupter Attach Interrupt Code] (https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Photointerrupter_LED_2/PhotointerrupterLED_2.ino)
+
+
 ### Problems
 This was a pretty tricky assignment because we had to deal with not only the photointerrupter and all the new code that went along with that, but also the attachInterrupt() function. Honestly, the most difficult thing about using the photointerrupter was finding one that worked. Many photointerrupters would flash when they sensed something but would fail to actually send any input to the arduino. This made it hard to tell whether your code/wiring was incorrect or if it was just an issue with the photointerrupter. I went through several trials of photointerrupters, even soldering one myself, before finally using Justine's old one that I knew definitely worked. For the attachInterrupt() function we not only had to figure out how to add the function itself, but also had to coordinate the pins for it. The digital input pins are weird (0=pin 2, 1=pin 3, etc) and I had several problems making sure the pin in my code corresponded with the pin I had plugged in. Towards the end of the project, my code was running correctly but my project still wasn't working, my Serial Monitor wasn't printing, and I didn't know why. It turned out that I had been using the wrong pin and I had wasted several class periods trying to figure out what was wrong when the issue was very simple.
 
@@ -98,6 +105,10 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 ### Description
 We had to use the LCD Backpack again for this assignment, but with a new goal of using a potentiometer to change the brightness of an LED and having the LCD screen display its value. 
 
+### Code
+[Potentiometer Code] (https://github.com/gwyatt40/Intermediate-Arduino/tree/master/Potentiometer)
+
+
 ### Problems
 The LCD wiring and code was pretty much the same as in the last LCD assignment. I just had to remember to switch 0X27 with 0x3 again. The real challenge for this project was the wiring and coding for the potentiometer. I decided that, in order to simplify things a bit, I would wire and code for the LED-to-potentiometer setup first (using the Serial Monitor to check, of course) and then add in the LCD later. I found a code online for the potentiometer which read the potentiometer pin in order to create a variable called readValue(). The readValue() was then used to calculate another variable called writeValue() which was written to the LED. I definitely wouldn't have been able to figure out how to do this on my own (calculating writeValue() involves multiplying readValue() by 255./1023.) so I'm glad I looked up a code before attempting to write one. I also googled the fritzing which was fairly simple, just basic LED wiring plus a potentiometer with legs to ground, 5V, and pin. Once I got this working, adding in the LCD was pretty straightforward- I wired it up, put what the Serial Monitor was writing into lcd.print(), and added in the necessary setup/libraries. 
 
@@ -117,6 +128,9 @@ The LCD wiring and code was pretty much the same as in the last LCD assignment. 
 
 ### Description
 The object of this assignment was to use a potentiometer to control the speed of a DC motor. To do this we had to use several new wiring components including a transistor, a diode, and a battery pack. 
+
+### Code
+[Motor Control Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Motor_Control/Motor_Control.ino)  
 
 ### Problems
 I had lots of issues with the wiring for this project, ranging from problems with the battery pack to problems with the direction of the diode. Since a battery pack was needed to power the motor (in addition to the computer powering the arduino), I had to find a battery pack that was wired and sautered to have exactly 6V of power. Luckily I was able to do this, but I had to test it a few times to make sure it worked and I kept forgetting what order the batteries went in to produce exactly 6V. After I got a working battery pack I had to deal with the rest of the wiring. There was a frtzing diagram on the Canvas page which was definitely helpful, but I wasn't able to figure out the finepoints of the wiring (pins etc.) from that alone. I some googling and copied some other people's fritzing but my wiring still tuned out really wrong and I made lots of silly mistakes (my diode was facing the way, etc). Once Mr. H showed me how to fix my wiring, it turned out that my code (which was pretty simple) was ok and I got my project to work. I probably should have tried to find a really reliable fritzing diagram online instead of trying to piece together my wiring from random Arduino forums and from what I saw of other people's projects. 
