@@ -10,7 +10,7 @@
   
 ### Pictures 
 
-<img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="300">
+<img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="600">
  
  - Fritzing from [arduino.cc](arduino.cc/en/tutorial/fade)
   
