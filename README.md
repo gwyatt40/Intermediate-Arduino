@@ -63,7 +63,7 @@ The wiring for this project was (thankfully) much easier than it had been for He
 
 ## Pictures
 
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="600">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="500">
 
 - Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
 
