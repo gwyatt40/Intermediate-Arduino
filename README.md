@@ -36,9 +36,9 @@ For the code, I had to figure out how to make a basic timer (which I did using l
 
 ### Pictures
 
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="300">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/HelloLCDPhoto.jpg" width="600">
 
-<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/hello_LCD/hello_lcd_fritzing.jpeg" width="300">
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/hello_LCD/hello_lcd_fritzing.jpeg" width="600">
 
 - Fritzing from [Justine's README](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
@@ -63,7 +63,7 @@ The wiring for this project was (thankfully) much easier than it had been for He
 
 ## Pictures
 
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="300">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="600">
 
 - Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
 
@@ -89,7 +89,7 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 
 ### Pictures
 
-<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="300">
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="600">
 
 - Again, fritzing credit to [Justine!](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
@@ -113,7 +113,7 @@ We had to use the LCD Backpack again for this assignment, but with a new goal of
 The LCD wiring and code was pretty much the same as in the last LCD assignment. I just had to remember to switch 0X27 with 0x3 again. The real challenge for this project was the wiring and coding for the potentiometer. I decided that, in order to simplify things a bit, I would wire and code for the LED-to-potentiometer setup first (using the Serial Monitor to check, of course) and then add in the LCD later. I found a code online for the potentiometer which read the potentiometer pin in order to create a variable called readValue(). The readValue() was then used to calculate another variable called writeValue() which was written to the LED. I definitely wouldn't have been able to figure out how to do this on my own (calculating writeValue() involves multiplying readValue() by 255./1023.) so I'm glad I looked up a code before attempting to write one. I also googled the fritzing which was fairly simple, just basic LED wiring plus a potentiometer with legs to ground, 5V, and pin. Once I got this working, adding in the LCD was pretty straightforward- I wired it up, put what the Serial Monitor was writing into lcd.print(), and added in the necessary setup/libraries. 
 
 ### Pictures
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/PotentiometerPhoto.jpg" width="300" height= "400">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/PotentiometerPhoto.jpg" width="600" height= "700">
 
 - I didn't include the LCD in this photo since its wiring was the same as in LCD Backpack. The only new wiring was the potentiometer and LED.
 
@@ -136,7 +136,7 @@ The object of this assignment was to use a potentiometer to control the speed of
 I had lots of issues with the wiring for this project, ranging from problems with the battery pack to problems with the direction of the diode. Since a battery pack was needed to power the motor (in addition to the computer powering the arduino), I had to find a battery pack that was wired and sautered to have exactly 6V of power. Luckily I was able to do this, but I had to test it a few times to make sure it worked and I kept forgetting what order the batteries went in to produce exactly 6V. After I got a working battery pack I had to deal with the rest of the wiring. There was a frtzing diagram on the Canvas page which was definitely helpful, but I wasn't able to figure out the finepoints of the wiring (pins etc.) from that alone. I some googling and copied some other people's fritzing but my wiring still tuned out really wrong and I made lots of silly mistakes (my diode was facing the way, etc). Once Mr. H showed me how to fix my wiring, it turned out that my code (which was pretty simple) was ok and I got my project to work. I probably should have tried to find a really reliable fritzing diagram online instead of trying to piece together my wiring from random Arduino forums and from what I saw of other people's projects. 
 
 ### Pictures
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="300">
+<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="600">
 
 - There wasn't room to include the motor in this photo, but you can see its red and blue wires. 
 
