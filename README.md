@@ -89,7 +89,7 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 
 ### Pictures
 
-<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing.png" width="600">
+<img src = "https://github.com/jbrown56/Intermediate-Arduino/blob/master/photo_interruptor/Photo_fritzing_new.png" width="600">
 
 - Again, fritzing credit to [Justine!](https://github.com/jbrown56/Intermediate-Arduino/blob/master/README.md)
 
