@@ -63,9 +63,9 @@ The wiring for this project was (thankfully) much easier than it had been for He
 
 ## Pictures
 
-<img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/LCDBackpackPhoto.png" width="500">
+<img src = "https://1.bp.blogspot.com/-KjSlG2xPzr8/WWMsfXNUFaI/AAAAAAAAZqU/UCQVEL_j23AtU25wtjEGKUnuaajmlbQbwCLcBGAs/s1600/LCD1602_bb.png" width="500">
 
-- Fritzing from [fritzing.org](https://fritzing.org/projects/arduino-i2c-lcd-display)
+- Fritzing from [a blog page on LCD backpack](https://rohling-de.blogspot.com/2017/07/text-on-your-display.html)
 
 
 
