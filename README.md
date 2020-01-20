@@ -3,7 +3,7 @@
 
 ## LED Blink Revisited
 ### Description
-  The goal of this assignment was to change the code of a simple LED blink project so that the LED would fade in and out instead of blinking. We also had to make the Serial Monitor display a wave of text as the brightness of the LED changed.
+  The goal of this assignment was to change the code of a simple LED blink project so that the LED would fade in and out instead of blinking. We also had to make the Serial Monitor display a wave of text as the brightness of the LED changed. To begin, I wired up a basic LED blink circuit and wrote a coressponding [code](https://www.arduino.cc/en/tutorial/blink). Then I created a variable called brightness and a variable called fadeAmount. I set fadeAmount equal to 10 and initial brightness to 0. I used if statements to make it so that when brightness was less than 200 it would increase in increments of fadeAmount (10). Once it equalled 200 it would begin to decrease.
 
 ### Code
 [LED Fade Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/LED_Blink_Revisited/LED%20Blink.ino)
@@ -25,7 +25,7 @@ The most difficult part of this project was definitely the code- the wiring was 
 ## Hello LCD
 
 ### Description
-This was my first time ever using an LCD screen! The project was simply to wire one to an arduino and have it print the words "Hello World" above a timer counting the seconds since the program began.
+This was my first time ever using an LCD screen! The project was simply to wire one to an arduino and have it print the words "Hello World" above a timer counting the seconds since the program began. First, I followed the instructions from the [adafruit page]. 
 
 
 ### Code
