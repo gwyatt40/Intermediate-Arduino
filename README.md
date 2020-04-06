@@ -18,7 +18,7 @@ Steps: The first step was writing a basic [LED Blink](https://www.Arduino.cc/en/
  - Fritzing from [Arduino.cc](Arduino.cc/en/tutorial/fade)
   
 ### Problems
-The only problem I encountered during this project was that my LED would blink off for a second just after it reached maximum brightness. I tried to fix this but, after realizing it did not prevent the LED from dimming or affect my Serial Monitor, I just left it. 
+ - The only problem I encountered during this project was that my LED would blink off for a second just after it reached maximum brightness. I tried to fix this but, after realizing it did not prevent the LED from dimming or affect my Serial Monitor, I just left it. 
 
 ### Lessons Learned
 - Look for a website before you do anything else
@@ -36,7 +36,7 @@ Steps: To begin, I wired the LCD to the Arduino following the steps from the [Ad
 [Hello LCD Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Hello_LCD/Hello_LCD.ino)
 
 ### Problems
-When I first ran my code I encountered an error with the Liquid Crystal library. I fixed this by downloading the library and double-checking that it was saved to the correct folder. 
+ - When I first ran my code I encountered an error with the Liquid Crystal library. I fixed this by downloading the library and double-checking that it was saved to the correct folder. 
 
 ### Pictures
 
@@ -66,7 +66,7 @@ Steps: The wiring involved adding on an LCD backpack, connecting it to correspon
 
 ## Problems
 
-My code gave me  a repeating error concerning the LiquidCrystal_I2C lcd(); function. I fixed this by following the Canvas instructions that recommended changing the LCD address from 0x27 to 0x3 in the case of an error. 
+ - My code gave me  a repeating error concerning the LiquidCrystal_I2C lcd(); function. I fixed this by following the Canvas instructions that recommended changing the LCD address from 0x27 to 0x3 in the case of an error. 
 
 ## Pictures
 
@@ -94,8 +94,8 @@ Steps: For the first part of the project I wired up a photointerrupter to a basi
 
 
 ### Problems
-Finding a photointerrupter that worked was difficult so, after many trials, I just ended up using one that Justine had used before me so I could be sure that it worked. 
-I accidentally had the wrong input pin in my code for a while, which was more human error than an actual technical problem, but remember to double check your pins!
+ - Finding a photointerrupter that worked was difficult so, after many trials, I just ended up using one that Justine had used before me so I could be sure that it worked. 
+ - I accidentally had the wrong input pin in my code for a while, which was more human error than an actual technical problem, but remember to double check your pins!
 
 ### Pictures
 
@@ -122,7 +122,7 @@ Steps: I dealt with wiring up and coding for the LED potentiometer control first
 
 
 ### Problems
-The only minor problem I encountered with this project was, again, switching the LCD address from 0x27 to 0x3.
+ - The only minor problem I encountered with this project was, again, switching the LCD address from 0x27 to 0x3.
 ### Pictures
 <img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/PotentiometerPhoto.jpg" width="600" height= "700">
 
@@ -145,7 +145,7 @@ Steps: The first thing I did was set up the wiring, because that was the trickie
 [Motor Control Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Motor_Control/Motor_Control.ino)  
 
 ### Problems
-I made a couple mistakes with my wiring which I fixed with the help of Mr. H and Google.  Besides this, I didn’t really encounter any major issues during this project, though the wiring problems were definitely time consuming. 
+ - I made a couple mistakes with my wiring which I fixed with the help of Mr. H and Google.  Besides this, I didn’t really encounter any major issues during this project, though the wiring problems were definitely time consuming. 
 
 ### Pictures
 <img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="600">
