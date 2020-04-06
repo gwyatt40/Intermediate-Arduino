@@ -3,19 +3,22 @@
 
 ## LED Blink Revisited
 ### Description
-  The goal of this assignment was to change the code of a simple LED blink project so that the LED would fade in and out instead of blinking. We also had to make the Serial Monitor display a wave of text as the brightness of the LED changed. The first step was writing a basic [LED Blink](https://www.arduino.cc/en/tutorial/blink) code and wiring up and LED to resistor circuit. Then I switched the analogWrite() function to digitalWrite() (as described on the Canvas page) and created a variable called brightness that would be written to the LCD. I created another variable called fadeAmount and set that equal to 10. I used if statements to make it so when the brightness was less than 200, it increased in increments of fadeAmount (10) and when it was equal to 200 it began to decrease. Initial brightness was 0. 
+
+Goal: To make an LED gradually fade in and out over time and have the Serial Monitor display a wave of text corresponding to its brightness. 
+
+Steps: The first step was writing a basic [LED Blink](https://www.Arduino.cc/en/tutorial/blink) code and wiring up and LED to resistor circuit. Then I switched the analogWrite() function to digitalWrite() (as described on the Canvas page) and created a variable called brightness that would be written to the LCD. I created another variable called fadeAmount and set that equal to 10. I used if statements to make it so when the brightness was less than 200, it increased in increments of fadeAmount (10) and when it was equal to 200 it began to decrease. Initial brightness was 0. 
 
 ### Code
 [LED Fade Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/LED_Blink_Revisited/LED%20Blink.ino)
   
 ### Pictures 
 
-<img src = "https://www.arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="600">
+<img src = "https://www.Arduino.cc/en/uploads/Tutorial/simplefade_bb.png" width="600">
  
- - Fritzing from [arduino.cc](arduino.cc/en/tutorial/fade)
+ - Fritzing from [Arduino.cc](Arduino.cc/en/tutorial/fade)
   
 ### Problems
-The most difficult part of this project was definitely the code- the wiring was fairly simple since it was just review from last year. In addition to using analogwrite() for the first time, I had to create 2 different variables in order to have the brightness increase and decrease. Once I added in the Serial Monitor code, I ended up having to use even more variables, making my code increasingly complicated. Most of the issues I ran into were just because I had forgotten something from last year or didn't know how to use a new function. Luckily, I found a great arduino.cc page that helped with this (linked in the photos). One unsolved problem was that my LED would turn off for just a second once it reached maximum brightness, but since this did not prevent it from dimming again and did not interrupt the Serial Monitor I just left it. 
+The only problem I encountered during this project was that my LED would blink off for a second just after it reached maximum brightness. I tried to fix this but, after realizing it did not prevent the LED from dimming or affect my Serial Monitor, I just left it. 
 
 ### Lessons Learned
 - Look for a website before you do anything else
@@ -25,14 +28,15 @@ The most difficult part of this project was definitely the code- the wiring was 
 ## Hello LCD
 
 ### Description
-This was my first time ever using an LCD screen! The project was simply to wire one to an Arduino and have it print the words "Hello World" above a timer counting the seconds since the program began. To begin, I wired the LCD to the arduino following the steps from the [Adafruit page linked on Canvas](https://learn.adafruit.com/character-lcds/wiring-a-character-lcd). Then I started a code using the setup libraries from the Canvas assignment page. I used lcd.begin(), lcd.setcursor(), and lcd.print() to print Hello World! on the first line of the LCD. I put this in void setup(). Then I went to void loop() created a timer function and set the cursor to the second line so that the timer was displayed at the bottom of the LCD. 
+Goal: The project was to wire an LCD to an Arduino and have it print the words "Hello World" and a timer counting the seconds since the program began. 
+Steps: To begin, I wired the LCD to the Arduino following the steps from the [Adafruit page linked on Canvas](https://learn.adafruit.com/character-lcds/wiring-a-character-lcd). Then I started a code using the setup libraries from the Canvas assignment page. I used lcd.begin(), lcd.setcursor(), and lcd.print() to print Hello World! on the first line of the LCD. I put this in void setup(). Then I went to void loop() created a timer function and set the cursor to the second line so that the timer was displayed at the bottom of the LCD. 
 
 
 ### Code
 [Hello LCD Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Hello_LCD/Hello_LCD.ino)
 
 ### Problems
-For the code, I had to figure out how to make a basic timer (which I did using lcd.print(millis() /1000)) download the Liquid Crystal library, and use LCD related functions for the first time (LCD.begin, etc). I could find info on most of the code through googling, though I was unable to find a site as comprehensive as the one for LED Fade. I also did have a bit of an issue with the Liquid Crystal library but I just had to download it and make sure it was saved in the correct folder. The wiring was much, much more complicated. While the Adafruit page linked on Canvas was extremely helpful, it was still a bit confusing to connect all twelve (12!!) of the LCD pins to the correct places on the Arduino. It took several tries and lots of double-checking to make sure that everything was where it should be. I realized about halfway through that it would probably be a good idea to color code and cut my wires so that I could easily see where each one was connected. Even with this solution the wiring was still complicated and I was glad when we learned how to use the LCD Backpack!
+When I first ran my code I encountered an error with the Liquid Crystal library. I fixed this by downloading the library and double-checking that it was saved to the correct folder. 
 
 ### Pictures
 
@@ -52,7 +56,8 @@ For the code, I had to figure out how to make a basic timer (which I did using l
 ## LCD Backpack
 
 ### Description
-This was the 2nd LCD assignment. It's goal was to use an LCD backpack to simplify the wiring for an LCD to Arduino setup. The wiring involved adding on an LCD backpack, connecting it to coressponding pins, and adding a button to the breadboard. I started the code with the new LCD backpack-specific setup functions and libraries. I added Hello World! code, similar to the code from the previous LCD assignment and then set the pin for the button and wrote a count function that increased the variable 'count' when the button state was detected as HIGH. I then made the LCD display the count value on the second line. 
+Goal: The objective was to use an LCD backpack to simplify LCD wiring and then to use that LCD to count how many times a button had been pressed. 
+Steps: The wiring involved adding on an LCD backpack, connecting it to corresponding pins, and adding a button to the breadboard. I started the code with the new LCD backpack-specific setup functions and libraries. I added Hello World! code, similar to the code from the previous LCD assignment and then set the pin for the button and wrote a count function that increased the variable 'count' when the button state was detected as HIGH. I then made the LCD display the count value on the second line. 
 
 
 ### Code
@@ -60,7 +65,8 @@ This was the 2nd LCD assignment. It's goal was to use an LCD backpack to simplif
 
 
 ## Problems
-The wiring for this project was (thankfully) much easier than it had been for Hello LCD. Though there were only 4 wires from the LCD to the breadboard, color coding them was still very helpful. As for the code, downloading the new libraries was pretty straightforward, but I did encounter an issue when using the LiquidCrystal_I2C lcd(); function. My code was giving me a repeating error and I couldn't figure out why until I realized that on the Canvas page it says to use 0x27 as the LCD address originally, but, it the case of an error, to use 0x3. Once I switched these my code worked immediately and I was able to continue the project. The rest of the new LCD setup functions worked well and I didn't encounter any other issues that couldn't be fixed by quickly checking over my code or googling.
+
+My code gave me  a repeating error concerning the LiquidCrystal_I2C lcd(); function. I fixed this by following the Canvas instructions that recommended changing the LCD address from 0x27 to 0x3 in the case of an error. 
 
 ## Pictures
 
@@ -77,7 +83,9 @@ The wiring for this project was (thankfully) much easier than it had been for He
 
 ## Photointerrupters
 ### Description
-This assignment had two parts. First, we had to wire up a photointerrupter and an LED so that when something passed through the photointerrupter, the LED turned on. Next, we had to add an attachInterrupt() function to our previous basic loop code so that the photointerrupter wouldn't miss anything that passed through it in less time than it took to run the loop. For the first part of the project I wired up a photointerrupter to a basic LED circuit, following the instructions on Canvas. After I completed the wiring, I wrote a code that used if statements to turn the LED on when the photointeruppter was activated and off when it was not. One important element of this code was that the photoPin was set as INPUT_PULLUP instead of as simply INPUT, so that the input pin would be held constantly at 5V until something interrupted the photointerrupter, which would cause it to go low and allow the change in voltage to be detected. For the second code, I created the variables int on() and int off() first, Int on() turned the LED on and added 1 to the variable 'interrupt', which would be printed by the serial monitor to measure how many times the photointerrupter had been activated. The int off() variable simply turned the LED off. I then added in atttachInterrupt functions to void setup which ran int on() when the photointerrupter state was RISING and int off() when it was falling. In the void loop() I added an if statement where the serial monitor printed the variable interrupt when the LED was on. 
+Goal: The goal of this project was to make an LED light up in response to an object passing through a photointerrupter and then to add in an attachInterrupt() function to make this process more efficient. 
+
+Steps: For the first part of the project I wired up a photointerrupter to a basic LED circuit, following the instructions on Canvas. After I completed the wiring, I wrote a code that used if statements to turn the LED on when the photointeruppter was activated and off when it was not. One important element of this code was that the photopin was set as INPUT_PULLUP instead of as simply INPUT, so that the input pin would be held constantly at 5V until something interrupted the photointerrupter, which would cause it to go low and allow the change in voltage to be detected. For the second code, I created the variables int on() and int off() first, Int on() turned the LED on and added 1 to the variable 'interrupt', which would be printed by the Serial Monitor to measure how many times the photointerrupter had been activated. The int off() variable simply turned the LED off. I then added in atttachInterrupt functions to void setup which ran int on() when the photointerrupter state was RISING and int off() when it was falling. In the void loop() I added an if statement where the Serial Monitor printed the variable interrupt when the LED was on. 
 
 ### Code
 [Photointerrupter Loop Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Photointerrupter_LED_1/PhotointerrupterLED_1.ino)
@@ -86,7 +94,8 @@ This assignment had two parts. First, we had to wire up a photointerrupter and a
 
 
 ### Problems
-This was a pretty tricky assignment because we had to deal with not only the photointerrupter and all the new code that went along with that, but also the attachInterrupt() function. Honestly, the most difficult thing about using the photointerrupter was finding one that worked. Many photointerrupters would flash when they sensed something but would fail to actually send any input to the arduino. This made it hard to tell whether your code/wiring was incorrect or if it was just an issue with the photointerrupter. I went through several trials of photointerrupters, even soldering one myself, before finally using Justine's old one that I knew definitely worked. For the attachInterrupt() function we not only had to figure out how to add the function itself, but also had to coordinate the pins for it. The digital input pins are weird (0=pin 2, 1=pin 3, etc) and I had several problems making sure the pin in my code corresponded with the pin I had plugged in. Towards the end of the project, my code was running correctly but my project still wasn't working, my Serial Monitor wasn't printing, and I didn't know why. It turned out that I had been using the wrong pin and I had wasted several class periods trying to figure out what was wrong when the issue was very simple.
+Finding a photointerrupter that worked was difficult so, after many trials, I just ended up using one that Justine had used before me so I could be sure that it worked. 
+I accidentally had the wrong input pin in my code for a while, which was more human error than an actual technical problem, but remember to double check your pins!
 
 ### Pictures
 
@@ -104,15 +113,16 @@ This was a pretty tricky assignment because we had to deal with not only the pho
 ## Potentiometers
 
 ### Description
-We had to use the LCD Backpack again for this assignment, but with a new goal of using a potentiometer to change the brightness of an LED and having the LCD screen display its value. I dealt with wiring up and coding for the LED potentiometer control first. I used a code I found online which effectively converted the potentiometer value into a brightness that could be written by the LED. I then wired up the LED to potentiometer circuit and double checked the code. After I had made sure that the code was correct, I added an LCD-backpack setup to the circuit and added appropriate LCD libraries and setup functions to the code. Then I wrote to the LCD the same thing that the serial monitor had been printing in the original code. 
+Goal: The goal of this project was to change the brightness of an LED with a potentiometer and to display its brightness value on an LCD screen. 
+
+Steps: I dealt with wiring up and coding for the LED potentiometer control first. I used a code I found online which effectively converted the potentiometer value into a brightness that could be written by the LED. I then wired up the LED to the potentiometer circuit and double checked the code. After I had made sure that the code was correct, I added an LCD-backpack setup to the circuit and added appropriate LCD libraries and setup functions to the code. Then I wrote to the LCD the same thing that the Serial Monitor had been printing in the original code. 
 
 ### Code
 [Potentiometer Code](https://github.com/gwyatt40/Intermediate-Arduino/tree/master/Potentiometer)
 
 
 ### Problems
-The LCD wiring and code was pretty much the same as in the last LCD assignment. I just had to remember to switch 0X27 with 0x3 again. The real challenge for this project was the wiring and coding for the potentiometer. I decided that, in order to simplify things a bit, I would wire and code for the LED-to-potentiometer setup first (using the Serial Monitor to check, of course) and then add in the LCD later. I found a code online for the potentiometer which read the potentiometer pin in order to create a variable called readValue(). The readValue() was then used to calculate another variable called writeValue() which was written to the LED. I definitely wouldn't have been able to figure out how to do this on my own (calculating writeValue() involves multiplying readValue() by 255./1023.) so I'm glad I looked up a code before attempting to write one. I also googled the fritzing which was fairly simple, just basic LED wiring plus a potentiometer with legs to ground, 5V, and pin. Once I got this working, adding in the LCD was pretty straightforward- I wired it up, put what the Serial Monitor was writing into lcd.print(), and added in the necessary setup/libraries. 
-
+The only minor problem I encountered with this project was, again, switching the LCD address from 0x27 to 0x3.
 ### Pictures
 <img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/PotentiometerPhoto.jpg" width="600" height= "700">
 
@@ -128,13 +138,14 @@ The LCD wiring and code was pretty much the same as in the last LCD assignment. 
 ## Motor Control
 
 ### Description
-The object of this assignment was to use a potentiometer to control the speed of a DC motor. To do this we had to use several new wiring components including a transistor, a diode, and a battery pack. The first thing I did was setup the wiring, because that was the trickiest part of the project with the most new components. I got the battery pack working and sautered it to have exactly 6V. Then, I wired up the circuit, connecting the motor, transistor, diode, potentiometer, and battery pack. Next, I wrote a code that read the value of the potentiometer and converted it into a speen that would be wrotten by the motor. My project didnt't work, however, and I had to test and retest both my code and my w9ring before I was able to determine that my wiring had been the issue originally. 
+Goal: The object of this assignment was to use a potentiometer to control the speed of a DC motor. 
+Steps: The first thing I did was set up the wiring, because that was the trickiest part of the project with the most new components. I got the battery pack working and sautered it to have exactly 6V. Then, I wired up the circuit, connecting the motor, transistor, diode, potentiometer, and battery pack. Next, I wrote a code that read the value of the potentiometer and converted it into a speed that would be written by the motor. 
 
 ### Code
 [Motor Control Code](https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Motor_Control/Motor_Control.ino)  
 
 ### Problems
-I had lots of issues with the wiring for this project, ranging from problems with the battery pack to problems with the direction of the diode. Since a battery pack was needed to power the motor (in addition to the computer powering the arduino), I had to find a battery pack that was wired and sautered to have exactly 6V of power. Luckily I was able to do this, but I had to test it a few times to make sure it worked and I kept forgetting what order the batteries went in to produce exactly 6V. After I got a working battery pack I had to deal with the rest of the wiring. There was a frtzing diagram on the Canvas page which was definitely helpful, but I wasn't able to figure out the finepoints of the wiring (pins etc.) from that alone. I some googling and copied some other people's fritzing but my wiring still tuned out really wrong and I made lots of silly mistakes (my diode was facing the way, etc). Once Mr. H showed me how to fix my wiring, it turned out that my code (which was pretty simple) was ok and I got my project to work. I probably should have tried to find a really reliable fritzing diagram online instead of trying to piece together my wiring from random Arduino forums and from what I saw of other people's projects. 
+I made a couple mistakes with my wiring which I fixed with the help of Mr. H and Google.  Besides this, I didn’t really encounter any major issues during this project, though the wiring problems were definitely time consuming. 
 
 ### Pictures
 <img src = "https://github.com/gwyatt40/Intermediate-Arduino/blob/master/Media/MotorControlPhoto.jpg" width="600">
@@ -144,7 +155,7 @@ I had lots of issues with the wiring for this project, ranging from problems wit
 ### Lessons Learned
  - Check you battery pack and individual batteries before doing anything else
  - To be safe, unplug battery pack and remove all batteries before storing
- - Always make sure that the basic layout of your wiring (what goes where) is correct (Google!) before you try to adress any other problems
+ - Always make sure that the basic layout of your wiring (what goes where) is correct (Google!) before you try to address any other problems
  - If your general wiring seems to be ok but your project is still not working, THEN check each individual wire and component to make sure that it  works and is in the right place/direction
  - If at all possible, find a good fritzing diagram online ASAP to guide your wiring
- 
+
